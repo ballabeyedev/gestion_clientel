@@ -1,0 +1,18 @@
+#clientForm{
+    margin: -30px;
+    margin-left: 90px;
+}
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.img_ajout{
+    margin-top: 60px;
+}
+.container {
+    height: 600px;
+}
+.profil i{
+    margin-left: 100px;
+}

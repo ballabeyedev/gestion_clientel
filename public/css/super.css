@@ -1,0 +1,300 @@
+.table-actions {
+text-align: center; /* Centre les boutons dans la cellule */
+}
+
+.table-actions button {
+background: none; /* Enlève le fond du bouton */
+border: none; /* Enlève la bordure du bouton */
+color: #333; /* Couleur des icônes */
+font-size: 16px; /* Taille des icônes */
+cursor: pointer; /* Changer le curseur au survol */
+margin: 0 5px; /* Espacement entre les boutons */
+padding: 5px; /* Espacement intérieur */
+transition: color 0.3s ease; /* Transition douce pour la couleur */
+}
+
+.table-actions button:hover {
+color: #007bff; /* Couleur au survol */
+}
+
+.table-actions .fa-trash {
+color: #dc3545; /* Couleur rouge pour supprimer */
+}
+
+.table-actions .fa-edit {
+color: #ffc107; /* Couleur jaune pour modifier */
+}
+
+.table-actions .fa-ban {
+color: #6c757d; /* Couleur gris pour bloquer */
+}
+
+.table-actions .fa-check-circle {
+color: #28a745; /* Couleur verte pour débloquer */
+}
+
+/* Optionnel : Style des boutons pour les rendre plus visibles */
+.table-actions button {
+background: #f8f9fa; /* Fond légèrement gris pour les boutons */
+border-radius: 4px; /* Coins arrondis pour les boutons */
+}
+
+.table-actions button:focus {
+outline: none; /* Supprimer le contour par défaut au focus */
+}
+.table-actions {
+    display: flex;
+    gap: 10px;
+}
+.table-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.table-actions button i {
+    font-size: 16px;
+    color: #000;
+}
+.table-actions button:hover i {
+    color: #007bff;
+}
+.modal-content{
+    width:800px
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.table{
+    margin-left: -10px;
+}
+.container1, .container2, .container3 {
+    width: 300px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.container1 {
+    background-color: blue;
+    margin-left: 30px;
+}
+
+.container2 {
+    background-color: red;
+    margin-top: -147px;
+    margin-left: 430px;
+}
+
+.container3 {
+    background-color: green;
+}
+
+.container1 p, .container2 p, .container3 p {
+    margin: 10px 0;
+}
+
+.container1 p:first-child, .container2 p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container1 p:last-child, .container2 p:last-child {
+    font-size: 16px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    color: white;
+}
+
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container3 .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+}
+
+.container3 button {
+    background-color: white;
+    border: none;
+    color: green;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container3 p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.container3 button:hover {
+    background-color: lightgreen;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+    .modal-content {
+        width: 95%;
+    }
+
+    th, td {
+        display: block;
+        width: 100%;
+    }
+
+    th {
+        text-align: right;
+    }
+
+    td {
+        text-align: right;
+        border-top: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+.modal-content1 {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.modal-content1 h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 600px) {
+    .modal-content1 {
+        width: 95%;
+    }
+
+    label,
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

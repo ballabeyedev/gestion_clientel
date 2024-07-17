@@ -1,0 +1,79 @@
+ /* Style des actions dans les cellules du tableau */
+ .table-actions {
+    text-align: center; /* Centre les boutons dans la cellule */
+}
+
+.table-actions button {
+    background: none; /* Enlève le fond du bouton */
+    border: none; /* Enlève la bordure du bouton */
+    color: #333; /* Couleur des icônes */
+    font-size: 16px; /* Taille des icônes */
+    cursor: pointer; /* Changer le curseur au survol */
+    margin: 0 5px; /* Espacement entre les boutons */
+    padding: 5px; /* Espacement intérieur */
+    transition: color 0.3s ease; /* Transition douce pour la couleur */
+}
+
+.table-actions button:hover {
+    color: #007bff; /* Couleur au survol */
+}
+
+.table-actions .fa-trash {
+    color: #dc3545; /* Couleur rouge pour supprimer */
+}
+
+.table-actions .fa-edit {
+    color: #ffc107; /* Couleur jaune pour modifier */
+}
+
+.table-actions .fa-ban {
+    color: #6c757d; /* Couleur gris pour bloquer */
+}
+
+.table-actions .fa-check-circle {
+    color: #28a745; /* Couleur verte pour débloquer */
+}
+
+/* Optionnel : Style des boutons pour les rendre plus visibles */
+.table-actions button {
+    background: #f8f9fa; /* Fond légèrement gris pour les boutons */
+    border-radius: 4px; /* Coins arrondis pour les boutons */
+}
+
+.table-actions button:focus {
+    outline: none; /* Supprimer le contour par défaut au focus */
+}
+.table-actions {
+            display: flex;
+            gap: 10px;
+        }
+        .table-actions button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .table-actions button i {
+            font-size: 16px;
+            color: #000;
+        }
+        .table-actions button:hover i {
+            color: #007bff;
+        }
+        .modal-content{
+            width:800px
+        }
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        .table{
+            margin-left: -10px;
+        }

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(237, 245, 247);
+    height: 100vh;
+    background-image: url('../image/bc.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+.container {
+    width: 550px;
+    height: 420px;
+    background: #fff;
+    border-radius: 25px;
+    position: relative;
+}
+
+.content-left {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    padding: 10px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.box {
+    width: 95%;
+    height: 60px;
+    margin: 10px;
+}
+
+.box input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #63f8fd;
+    background: transparent;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 60px;
+    border: 0;
+    background: #63f8fd;
+    margin-top: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.content-right {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #63f8fd;
+    right: 0;
+    border-start-start-radius: 35%;
+    border-end-start-radius: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.error-message {
+    color: red;
+}
+
+.content-right h2 {
+    font-size: 24px; 
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+.content-right p {
+    font-size: 16px; 
+    color: #666; 
+    line-height: 1.5; 
+    margin: 0; 
+}
+
+ .content-right h2 {
+    font-size: 24px; 
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+.content-right p {
+    font-size: 16px; 
+    color: #666; 
+    line-height: 1.5; 
+    margin: 0; 
+}
+.icon-list {
+    display: flex;
+    gap: 15px; 
+    margin-top: 20px; 
+}
+
+.icon-list i {
+    font-size: 24px; 
+    color: #007bff; 
+}
